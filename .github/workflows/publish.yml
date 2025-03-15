@@ -20,11 +20,3 @@ jobs:
             node-version: 22
         secrets:
             token: ${{secrets.NPM_TOKEN}}
-
-    pages-deploy:
-        needs: [publish-npmjs]
-        permissions:
-            contents: read
-            pages: write
-            id-token: write
-        uses: ragarwalll/deployer-workflow/.github/workflows/github-pages-deply.yml@main
