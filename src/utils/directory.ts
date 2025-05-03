@@ -1,7 +1,7 @@
 import {
     type UserInputMetadataConfirm,
     type UserInputMetadataList,
-} from '@/boilerplate/user-input.js';
+} from '../boilerplate/user-input.js';
 
 export const availableOverrideChoices: UserInputMetadataList = {
     name: {

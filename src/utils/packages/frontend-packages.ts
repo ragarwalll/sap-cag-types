@@ -1,4 +1,4 @@
-import { type PackageMetadata } from '@/utils/packages/packages.js';
+import { type PackageMetadata } from '../../utils/packages/packages.js';
 export const frontendPackages = ['ui5', 'react'] as const;
 export type FrontendPackageDefaultsMap = (typeof frontendPackages)[number];
 export type AvailableFrontendPackagesMap = {

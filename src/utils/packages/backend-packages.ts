@@ -1,4 +1,4 @@
-import { type PackageMetadata } from '@/utils/packages/packages.js';
+import { type PackageMetadata } from '../../utils/packages/packages.js';
 export const backendPackages = ['springboot', 'nodejs', 'python'] as const;
 export type BackendPackageDefaultsMap = (typeof backendPackages)[number];
 export type AvailableBackendPackagesMap = {

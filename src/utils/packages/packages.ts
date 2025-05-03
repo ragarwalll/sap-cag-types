@@ -1,6 +1,6 @@
-import { type UserInputMetadata } from '@/boilerplate/user-input.js';
-import { type backendPackages } from '@/utils/packages/backend-packages.js';
-import { type frontendPackages } from '@/utils/packages/frontend-packages.js';
+import { type UserInputMetadata } from '../../boilerplate/user-input.js';
+import { type backendPackages } from './backend-packages.js';
+import { type frontendPackages } from './frontend-packages.js';
 
 export const PACKAGE_NAME = 'create-sap-fs-app';
 export const PACKAGE_DESCRIPTION =

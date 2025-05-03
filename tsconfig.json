@@ -1,13 +1,17 @@
 {
-    "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "module": "NodeNext",
-        "baseUrl": "./",
-        "paths": {
-            "@/*": ["./src/*"]
-        },
-        "checkJs": true
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "ESNext",
+        "target": "ESNext",
+        "strict": true,
+        "moduleResolution": "Bundler",
+        "esModuleInterop": true,
+        "skipLibCheck": true
     },
-    "include": ["src"],
-    "exclude": ["templates"]
+    "include": [
+        "src"
+    ]
 }
