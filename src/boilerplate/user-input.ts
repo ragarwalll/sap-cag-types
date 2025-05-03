@@ -1,7 +1,7 @@
 import {
     type ChoiceOps,
     type AvailableFlagsType,
-} from '../utils/boilerplate-flags.js';
+} from '../utils/boilerplate-flags';
 
 export interface UserInputMetadata {
     name: string;

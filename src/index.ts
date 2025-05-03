@@ -1,13 +1,13 @@
 //boilerplate
-export * from './boilerplate/boilterplater-struct.js';
-export * from './boilerplate/user-input.js';
+export * from './boilerplate/boilterplater-struct';
+export * from './boilerplate/user-input';
 
 //utils
-export * from './utils/boilerplate-flags.js';
-export * from './utils/directory.js';
+export * from './utils/boilerplate-flags';
+export * from './utils/directory';
 
 //utils
 //packages
-export * from './utils/packages/packages.js';
-export * from './utils/packages/backend-packages.js';
-export * from './utils/packages/frontend-packages.js';
+export * from './utils/packages/packages';
+export * from './utils/packages/backend-packages';
+export * from './utils/packages/frontend-packages';

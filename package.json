@@ -1,6 +1,6 @@
 {
   "name": "@ragarwal06/sap-cloud-application-generator-types",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Boilerplate types for creating full stack applications",
   "license": "ISC",
   "repository": {
@@ -18,26 +18,25 @@
     "types",
     "cf"
   ],
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",        
+  "module": "dist/index.js",        
+  "types": "dist/bundle.d.ts",      
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.d.ts",
-      "require": "./dist/index.d.ts"
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/bundle.d.ts"
     }
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "sideEffects": false,
-  "private": false,
   "engines": {
     "node": ">=14.19"
   },
   "scripts": {
-    "typecheck": "tsc",
-    "build": "npm run clean && tsc",
     "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run clean && rollup -c && node ./scripts/write-stub.js",
     "lint": "eslint src/** --report-unused-disable-directives",
     "lint:fix": "npm run lint --fix",
     "format": "prettier --write \"src/**/*.{cjs,mjs,ts,tsx,md,json}\"",
@@ -56,7 +55,9 @@
     "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
-    "typescript": "^5.8.2"
+    "rollup": "^4.40.1",
+    "rollup-plugin-dts": "^6.2.1",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@types/node": "^22.13.10"

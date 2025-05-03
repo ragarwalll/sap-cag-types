@@ -2,9 +2,9 @@ import {
     type UserInputMetadataConfirm,
     type UserInputMetadataInput,
     type UserInputMetadataOptions,
-} from '../boilerplate/user-input.js';
+} from '../boilerplate/user-input';
 
-import { GITHUB_LOCATION, PACKAGE_NAME } from './packages/packages.js';
+import { GITHUB_LOCATION, PACKAGE_NAME } from './packages/packages';
 export const APP_NAME = 'sap-ts-app';
 export const AFTER_ALL = {
     value: 'afterAll',

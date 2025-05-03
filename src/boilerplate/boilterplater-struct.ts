@@ -1,7 +1,7 @@
-import { type AvailablePackagesMap } from '../utils/packages/packages.js';
-import { APP_NAME } from '../utils/boilerplate-flags.js';
-import { defaultFrontendPackage } from '../utils/packages/frontend-packages.js';
-import { defaultBackendPackage } from '../utils/packages/backend-packages.js';
+import { type AvailablePackagesMap } from '../utils/packages/packages';
+import { APP_NAME } from '../utils/boilerplate-flags';
+import { defaultFrontendPackage } from '../utils/packages/frontend-packages';
+import { defaultBackendPackage } from '../utils/packages/backend-packages';
 
 export interface BoilerplateFlags {
     noInstall: boolean;
