@@ -12,10 +12,6 @@ A shared TypeScript library of enums, interfaces, and constants used by both the
 
 - Enums for supported frontends (`FrontendFramework`), backends (`BackendFramework`), and services (`BtpService`)
 - Predefined lists of package names and versions for UI5, React, Node.js, Spring Boot, etc.
-- Interfaces:
-  - `ProjectOptions` for generator inputs
-  - `DependencySpec` for package/version pairs
-  - `ServiceConfig` for SAP BTP services configuration
 - Single source of truth for both `@ragarwal06/sap-fs-app` CLI and VS Code extension
 
 ## 🎯 Installation
@@ -42,7 +38,7 @@ pnpm add @ragarwal06/sap-cloud-application-types
 - `BackendFramework`
   - `NODE`, `SPRING`
 - `BtpService`
-  - `XSUAA`, `HANA`, `CONNECTIVITY`, `DESTINATION`, etc.
+  - `XSUAA`, etc.
 
 ## 📄 License
 
